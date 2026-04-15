@@ -1,18 +1,58 @@
+#  **Estructuras de Datos con TypeScript**
 
-# Estructura De Datos TS
+Implementaciones prácticas de estructuras de datos usando **TypeScript**, explicadas de forma clara y con código limpio.
 
-Curso de estructura de datos con typescript by Dazhlo
+<p align="center">
+  <img src="https://images.seeklogo.com/logo-png/29/1/typescript-logo-png_seeklogo-298572.png" width="120" />
+</p>
 
-## ☠️ About Me
-I'm Dazhlo, im still learning new stuff. 
+---
 
+##  **Badges del Proyecto**
 
-## Tech Stack
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+</p>
 
+---
 
-**Server:** TypeScript
+## ☠️ **About Me**
 
+Soy **Dazhlo**, un desarrollador en crecimiento que disfruta aprender, romper cosas y volverlas a armar mejor.
 
+---
 
-![Logo](https://images.seeklogo.com/logo-png/29/1/typescript-logo-png_seeklogo-298572.png)
+## 🛠 **Tech Stack**
 
+| Tecnología | Uso |
+|-----------|------|
+| **TypeScript** | Implementación de estructuras de datos |
+| **Node.js** | Ejecución del proyecto |
+| **VSCode** | Editor principal |
+
+---
+
+##  **Contenido del Curso**
+
+### 🔹 Estructuras Implementadas
+- Listas enlazadas
+- Pilas (Stacks)
+- Colas (Queues)
+- Árboles
+- Grafos
+- Algoritmos básicos
+
+### 🔹 Próximos temas
+- Sorting Algorithms  
+- Hash Tables  
+- Árboles AVL / Red-Black  
+
+---
+
+##  **Cómo Ejecutar el Proyecto**
+
+```bash
+npm install
+npm run dev

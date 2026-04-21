@@ -1,0 +1,12 @@
+El Problema:
+Imagina que estás diseñando un sistema para manejar Dinero (Money).
+
+Crea una clase Money que sea inmutable.
+
+Debe recibir un amount (cantidad) y una currency (moneda, ej: 'USD', 'EUR').
+
+Implementa un método add(other: Money): Money.
+
+Regla: No se pueden sumar dineros de diferentes monedas (debe lanzar error).
+
+Regla: El resultado debe ser una nueva instancia de Money.

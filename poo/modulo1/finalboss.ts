@@ -4,7 +4,10 @@ class Money {
     private constructor(
         private readonly amount: number,
         private readonly currency: string
-    ) { }
+    ) {
+        this.amount = amount
+        this.currency = currency
+     }
 
 
     public static create(amount: number, currency: string) {
@@ -17,29 +20,48 @@ class Money {
         } else {
             return false
         }
-    }
+    }  
+    
+
 
     public sumar(obj1: Money, obj2: Money) {
         if (
             this.validateSuma(obj1, obj2)
         ) {
-            //  this.currency = obj1 + obj2;
-            return new Money(this.amount, this.currency)
-            //  const total = obj1.amount + obj2.amount;
-            //  console.log()
+       const total = obj1.amount + obj2.amount
+       const cur = obj1.currency
+          
+            return new Money(total,cur) 
+       
         } else {
             console.log('No se puede.')
         }
+
+   
+   
+
+    
     }
+   
+    }
+
+     
+  
     // getMony(): Money {
     //     return this.forEach(f => console.log(f.getMony))
     // }
-
+    
     // euro = new Money(10, 'EUR')
 
     // money.forEach(f => console.log(false.))
 
 
-}
+
+const MX =  Money.create(100,'mx') 
+const USA=  Money.create(10,'mx') 
+console.log(
+   MX.sumar(MX,USA)
+
+)
 
 

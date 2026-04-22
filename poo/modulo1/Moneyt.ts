@@ -25,3 +25,11 @@ export class Money {
     return this.amount === other.amount && this.currency === other.currency;
   }
 }
+
+const MX = Money.create(100, 'mx')
+const USA = Money.create(100, 'mx')
+
+console.log(MX, USA)
+
+USA.add(MX)
+console.log(USA)

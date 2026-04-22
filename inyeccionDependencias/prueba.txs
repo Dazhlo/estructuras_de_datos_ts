@@ -1,0 +1,22 @@
+Situación:
+Estás construyendo un sistema de procesamiento de pagos. El sistema debe ser
+ capaz de procesar pagos, pero el método de pago (Stripe, PayPal o una Tarjeta local)
+  puede cambiar según el país o la preferencia del usuario.
+
+Tu Reto:
+
+Define el Contrato: Crea una interfaz llamada PaymentGateway
+ que tenga un método processPayment(amount: number): boolean.
+
+Crea las Implementaciones: * StripeAdapter: Debe imprimir "Pagando con Stripe..." y devolver true.
+
+PaypalAdapter: Debe imprimir "Pagando con PayPal..." y devolver true.
+
+Crea el Consumidor: Crea una clase CheckoutProcess que reciba el PaymentGateway en su constructor. 
+Esta clase debe tener un método completeOrder(total: number) que use el gateway inyectado para procesar el pago.
+
+Inyección Dinámica: Escribe un pequeño script que instancie CheckoutProcess usando StripeAdapter
+ si una variable llamada method es igual a "stripe", o PaypalAdapter si es cualquier otra cosa.
+
+Regla de Oro: La clase CheckoutProcess no puede tener un if o un switch para decidir si usa Stripe 
+o PayPal. Esa decisión debe ocurrir antes de crear la clase.

@@ -1,0 +1,26 @@
+Prueba Técnica: El Almacén Genérico
+Contexto: Estás diseñando un sistema de gestión de activos. 
+Tienes Equipos y Herramientas.
+ Ambos necesitan ser guardados,
+ pero el cliente quiere que el sistema de guardado sea "intercambiable" 
+ (hoy es memoria, 
+ mañana puede ser una base de datos).
+
+Tu Reto:
+
+Crea la interfaz IRepository<T>.
+
+Crea una clase llamada StorageService<T> que reciba en su constructor
+ una instancia de IRepository<T>.
+
+Implementa un método en StorageService llamado saveSafe(item: T) que:
+
+Verifique si el item ya existe usando el getById.
+
+Si no existe, lo cree.
+
+Si ya existe, lance un error o imprima un mensaje de advertencia.
+
+Pregunta Pro: ¿Cómo harías para que IRepository solo acepte objetos 
+que tengan una propiedad 
+createdAt: Date obligatoriamente?
